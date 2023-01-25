@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.fragment.CrimeFragment"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+        >
+
+            <ImageView
+                    android:id="@+id/capture_img"
+                    android:background="@android:color/darker_gray"
+                    android:scaleType="centerInside"
+                    android:cropToPadding="true"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+            />
+
+            <ImageButton
+                    android:id="@+id/capture_img_button"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_img_capture"
+                    android:layout_margin="5dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+        >
+            <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title"
+                    android:textSize="14sp"
+                    style="?android:listSeparatorTextViewStyle"
+            />
+
+            <EditText
+                    android:id="@+id/input_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_title_hint"
+                    android:inputType="text"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            android:textSize="14sp"
+            style="?android:listSeparatorTextViewStyle"
+    />
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/date_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="@string/tools_date"
+    />
+
+    <com.google.android.material.button.MaterialButton android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:text="@string/choose_suspect"
+                                                       android:id="@+id/choose_suspect"
+    />
+
+    <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_report"
+            android:text="@string/send_crime_report"
+    />
+
+
+
+    <CheckBox
+            android:id="@+id/solved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/solved"
+            android:textSize="14sp"
+    />
+
+</LinearLayout>
